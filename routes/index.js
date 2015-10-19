@@ -10,6 +10,10 @@ var router = express.Router();
 
 router.use('/', require('./quizz'));
 router.use('/', require('./themes'));
+router.use('/', require('./games'));
+router.use('/', require('./questions'));
+router.use('/', require('./responses'));
+router.use('/', require('./users'));
 
 
 router.use(function(req, res, next) {

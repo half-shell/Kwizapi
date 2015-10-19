@@ -11,16 +11,16 @@ app.use(bodyParser.json());
 // Setting server port
 var port = 3000;
 
-// DB setup
-// var sequelize = new Sequelize('kwizybo_api', 'root', 'root', {
-//   host: 'localhost',
-//   port: 8889,
-//   define: {
-//     timestamps: false
-//   }
-// });
+//DB setup
+var sequelize = new Sequelize('kwizybo_api', 'root', 'root', {
+  host: 'localhost',
+  port: 8889,
+  define: {
+    timestamps: false
+  }
+});
 
-// Check database connection
+//Check database connection
 sequelize.authenticate().then(function(err) {
   if(err)
     console.log('Unable to connect to database: ', err);
