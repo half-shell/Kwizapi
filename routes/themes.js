@@ -41,7 +41,7 @@ router.route('/quizz/:quizz_id/themes/:id_themes')
     Themes.find({
       where: {
         quizz_id_themes: req.params.quizz_id,
-        id: req.params.id_themes
+        id_theme: req.params.id_themes
       }
       // ,include: [{model: Quizz, required: true}]
     }).then(function (err, themes) {
@@ -56,7 +56,7 @@ router.route('/quizz/:quizz_id/themes/:id_themes')
     Themes.find({
       where: {
         quizz_id_themes: req.params.quizz_id,
-        id: req.params.id_themes
+        id_theme: req.params.id_themes
       }
     }).then(function (themes, err) {
       if(err)

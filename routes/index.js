@@ -25,6 +25,4 @@ router.get('/about', function(req, res) {
   res.send('Learn about us')
 })
 
-app.use('/api', router);
-
 module.exports = router

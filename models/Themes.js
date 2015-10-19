@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('themes', {
-    id_quizz: { type: DataTypes.BIGINT(11), primaryKey: true},
+    id_theme: { type: DataTypes.BIGINT(11), primaryKey: true},
   	quizz_id_themes: {
    		type: DataTypes.BIGINT(11),
 

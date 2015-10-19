@@ -12,13 +12,13 @@ app.use(bodyParser.json());
 var port = 3000;
 
 // DB setup
-var sequelize = new Sequelize('kwizybo_api', 'root', 'root', {
-  host: 'localhost',
-  port: 8889,
-  define: {
-    timestamps: false
-  }
-});
+// var sequelize = new Sequelize('kwizybo_api', 'root', 'root', {
+//   host: 'localhost',
+//   port: 8889,
+//   define: {
+//     timestamps: false
+//   }
+// });
 
 // Check database connection
 sequelize.authenticate().then(function(err) {
@@ -26,16 +26,6 @@ sequelize.authenticate().then(function(err) {
     console.log('Unable to connect to database: ', err);
   console.log('Connected to database.');
 });
-
-// Getting all models
-var models = require('./models');
-
-// Getting a model is that simple
-var Themes = models.Themes;
-var Quizz = models.Quizz;
-
-// Basic routing
-var router = express.Router();
 
 // routes
 app.use(require('./routes'))

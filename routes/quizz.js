@@ -35,7 +35,7 @@ router.route('/quizz/:quizz_id')
   .get(function(req, res) {
     Quizz.find({
       where: {
-        id: req.params.quizz_id
+        id_quizz: req.params.quizz_id
       }
     }).then(function (err, quizz) {
       if(err)
@@ -48,7 +48,7 @@ router.route('/quizz/:quizz_id')
   .put(function(req, res) {
     Quizz.find({
       where: {
-        id: req.params.quizz_id
+        id_quizz: req.params.quizz_id
       }
     }).then(function (quizz, err) {
       if(err)
