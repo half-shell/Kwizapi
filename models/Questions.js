@@ -9,22 +9,22 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    good_rep: {
-      type: DataTypes.TEXT,
-      allowNull: false
-    },
-    bad_rep1: {
-      type: DataTypes.TEXT,
-      allowNull: false
-    },
-    bad_rep2: {
-      type: DataTypes.TEXT,
-      allowNull: false
-    },
-    bad_rep3: {
-      type: DataTypes.TEXT,
-      allowNull: false
-    },
+    // good_rep: {
+    //   type: DataTypes.TEXT,
+    //   allowNull: false
+    // },
+    // bad_rep1: {
+    //   type: DataTypes.TEXT,
+    //   allowNull: false
+    // },
+    // bad_rep2: {
+    //   type: DataTypes.TEXT,
+    //   allowNull: false
+    // },
+    // bad_rep3: {
+    //   type: DataTypes.TEXT,
+    //   allowNull: false
+    // },
     date_added: {
       type: DataTypes.DATE,
       allowNull: false,

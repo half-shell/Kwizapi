@@ -32,7 +32,7 @@ models.forEach(function (model) {
   //m.Quizz.hasMany(m.Themes, {foreignKey: 'quizz_id_themes'});
 
   m.Responses.belongsTo(m.Questions, {foreignKey: 'question_id'});
-  // m.Questions.hasMany(m.Responses, {foreignKey: 'question_id'});
+  m.Questions.hasMany(m.Responses, {foreignKey: 'question_id'});
  
   m.Games.belongsTo(m.Users, {foreignKey: 'user_id_1'});
 
